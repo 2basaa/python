@@ -1,4 +1,5 @@
 import math
+import time
 
 def merge(data, start , mid, end):
     #最初はstart=0, mid = 0, end = 1
@@ -39,4 +40,7 @@ def merge_sort(data, start, end):
 
 data = [9,7,6,8,5,10,3,2, 7]
 end = len(data) - 1
+start = time.time()
 merge_sort(data, 0, end)
+end = time.time()
+print(end - start)

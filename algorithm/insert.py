@@ -1,3 +1,4 @@
+import time
 #挿入ソート
 class insert:
     def __init__(self, data):
@@ -64,5 +65,8 @@ class insert:
 
 data = [ 9, 7, 6, 8, 3, 5, 4]
 insert = insert(data)
-insert.ascending()
+#insert.ascending()
+start = time.time()
 insert.descending()
+end = time.time()
+print(end - start)

@@ -1,3 +1,5 @@
+import time
+
 class selection:
     def __init__(self, data):
         self.data = data
@@ -55,5 +57,8 @@ class selection:
     
 data = [7, 3, 1, 5, 6, 4, 9]
 selection = selection(data)
-selection.ascending()
+#selection.ascending()
+start = time.time()
 selection.descending()
+end = time.time()
+print(end - start)

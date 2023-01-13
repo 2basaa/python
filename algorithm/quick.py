@@ -1,5 +1,6 @@
 #クイックソートの実行
 #先頭の２つ値の内大きい値を選ぶ
+import time
 
 def partition(data, start, end):
     citeriion_value = data[end]
@@ -24,5 +25,8 @@ def quick(data, start, end):
 
 data = [12, 3, 1, 13, 3, 45, 6, 7, 8]
 end = len(data) - 1
+start_time = time.time()
 quick(data, 0, end)
+end_time = time.time()
 print(data)
+print(end_time - start_time)
