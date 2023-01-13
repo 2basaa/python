@@ -1,4 +1,4 @@
-#!python3.7 
+#!python3.7
 # -*- coding: utf-8 -*-  
 import numpy as np 
 import random 

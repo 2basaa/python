@@ -1,3 +1,4 @@
+import time
 class bubble_sort:#バブルソート
     def __init__(self, data):#コンストラクタ
         self.data = data
@@ -40,7 +41,12 @@ class bubble_sort:#バブルソート
         print(self.count)#n(n-1)/2回
         self.reset_data()
 
-data = [2,3,4,1,5,7, 3]
+start_time = time.time()
+data = [2,3,4,1,5,7,3,8,5,3, 9,5,1,3,4,15,23,42]
 bubble = bubble_sort(data)
 bubble.ascending()
-bubble.descending()
+end_time = time.time()
+#measurement_time = 測定時間
+measurement_time = end_time - start_time 
+print(measurement_time)
+#bubble.descending()
