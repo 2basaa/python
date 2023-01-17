@@ -1,6 +1,6 @@
 import time
 #挿入ソート
-class insert:
+class insert_sort:
     def __init__(self, data):
         self.data = data#
         self.data_number = len(self.data)#
@@ -28,13 +28,14 @@ class insert:
             self.point = 0
             self.start_index += 1
             self.insert_index = 0
-        print(self.data)
-        print(self.count)
+        #print(self.data)
+        #print(self.count)
         #初期化
         self.start_index = 1
         self.insert_index = 0
         self.point = 0
         self.count = 0
+        return self.data
 
     def descending(self):#昇順
         #0からlen(data)-1回まで
@@ -63,10 +64,12 @@ class insert:
         self.point = 0
         self.count = 0
 
+'''
 data = [ 9, 7, 6, 8, 3, 5, 4]
-insert = insert(data)
+insert = insert_sort(data)
 #insert.ascending()
 start = time.time()
 insert.descending()
 end = time.time()
 print(end - start)
+'''

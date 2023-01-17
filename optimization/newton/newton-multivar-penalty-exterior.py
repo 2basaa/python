@@ -105,7 +105,7 @@ initial_value = -(np.random.rand(dimensions,1)+3)
 # by a gamma factor 
 ################################## 
 print("initial_value =", initial_value) 
-rho = 0.1 
+rho =0.1
 gamma = 5.0 
 tolerance = 1e-2 
 x_i = initial_value 

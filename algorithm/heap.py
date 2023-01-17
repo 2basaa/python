@@ -57,7 +57,7 @@ def heap_sort(data):
         heap_list[num] = data[num]
         data.pop(num)
         max_heapify(data, 0)
-        if num == 2:
+        if num == 2:#リストの中身が残り2つの場合
             if data[1] > data[0]:
                 heap_list[1] = data[1]
                 heap_list[0] = data[0]

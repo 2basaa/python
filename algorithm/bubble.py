@@ -23,8 +23,8 @@ class bubble_sort:#バブルソート
                 self.count += 1
             self.current_point -= 1#インデックスの場所を1つ前にずらす。
             self.index += 1 
-        print(self.data)#昇順
-        print(self.count)#回数
+        #print(self.data)#昇順
+        #print(self.count)#回数
         self.reset_data()
 
     def descending(self):#降順のソート
@@ -37,10 +37,12 @@ class bubble_sort:#バブルソート
                 self.count += 1
             self.current_point -= 1#インデックスの場所を1つ前にずらす。
             self.index += 1 
-        print(self.data)#降順
-        print(self.count)#n(n-1)/2回
+        #print(self.data)#降順
+        #print(self.count)#n(n-1)/2回
         self.reset_data()
+        return self.data
 
+"""
 start_time = time.time()
 data = [2,3,4,1,5,7,3,8,5,3, 9,5,1,3,4,15,23,42]
 bubble = bubble_sort(data)
@@ -50,3 +52,4 @@ end_time = time.time()
 measurement_time = end_time - start_time 
 print(measurement_time)
 #bubble.descending()
+"""
