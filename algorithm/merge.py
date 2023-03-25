@@ -1,3 +1,4 @@
+#!C:\Users\Tsubasa\anaconda3\envs\py3108\python.exe
 import math
 import time
 
